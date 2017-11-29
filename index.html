@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bitwise Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    <script src="http://peterolson.github.com/BigInteger.js/BigInteger.min.js"></script>
+    <script src="script.js" type="text/javascript" defer></script>
+    <script src="keypress.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>Bitwise Calculator</h1>
+
+    <div id="container">
+      <div id="screen">
+      <div id="equation"></div>
+      <div id="display"></div>
+      </div>
+      <div id="bits">
+        <div id="bits_top">
+          <div id="bits_topleft">
+            <div class="bits4">
+              <span class="bit_select" id="63">0</span>
+              <span class="bit_select" id="62">0</span>
+              <span class="bit_select" id="61">0</span>
+              <span class="bit_select" id="60">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="59">0</span>
+              <span class="bit_select" id="58">0</span>
+              <span class="bit_select" id="57">0</span>
+              <span class="bit_select" id="56">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="55">0</span>
+              <span class="bit_select" id="54">0</span>
+              <span class="bit_select" id="53">0</span>
+              <span class="bit_select" id="52">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="51">0</span>
+              <span class="bit_select" id="50">0</span>
+              <span class="bit_select" id="49">0</span>
+              <span class="bit_select" id="48">0</span>
+            </div>
+            <div class="bit_name">63</div>
+          </div>
+          <div id="bits_topright">
+            <div class="bits4">
+              <span class="bit_select" id="47">0</span>
+              <span class="bit_select" id="46">0</span>
+              <span class="bit_select" id="45">0</span>
+              <span class="bit_select" id="44">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="43">0</span>
+              <span class="bit_select" id="42">0</span>
+              <span class="bit_select" id="41">0</span>
+              <span class="bit_select" id="40">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="39">0</span>
+              <span class="bit_select" id="38">0</span>
+              <span class="bit_select" id="37">0</span>
+              <span class="bit_select" id="36">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="35">0</span>
+              <span class="bit_select" id="34">0</span>
+              <span class="bit_select" id="33">0</span>
+              <span class="bit_select" id="32">0</span>
+            </div>
+            <div class="bit_name">47</div>
+          </div>
+        </div>
+        <div id="bits_bottom">
+          <div id="bits_bottomleft">
+            <div class="bits4">
+              <span class="bit_select" id="31">0</span>
+              <span class="bit_select" id="30">0</span>
+              <span class="bit_select" id="29">0</span>
+              <span class="bit_select" id="28">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="27">0</span>
+              <span class="bit_select" id="26">0</span>
+              <span class="bit_select" id="25">0</span>
+              <span class="bit_select" id="24">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="23">0</span>
+              <span class="bit_select" id="22">0</span>
+              <span class="bit_select" id="21">0</span>
+              <span class="bit_select" id="20">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="19">0</span>
+              <span class="bit_select" id="18">0</span>
+              <span class="bit_select" id="17">0</span>
+              <span class="bit_select" id="16">0</span>
+            </div>
+            <div class="bit_name">31</div>
+          </div>
+          <div id="bits_bottomright">
+            <div class="bits4">
+              <span class="bit_select" id="15">0</span>
+              <span class="bit_select" id="14">0</span>
+              <span class="bit_select" id="13">0</span>
+              <span class="bit_select" id="12">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="11">0</span>
+              <span class="bit_select" id="10">0</span>
+              <span class="bit_select" id="9">0</span>
+              <span class="bit_select" id="8">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="7">0</span>
+              <span class="bit_select" id="6">0</span>
+              <span class="bit_select" id="5">0</span>
+              <span class="bit_select" id="4">0</span>
+            </div>
+            <div class="bits4">
+              <span class="bit_select" id="3">0</span>
+              <span class="bit_select" id="2">0</span>
+              <span class="bit_select" id="1">0</span>
+              <span class="bit_select" id="0">0</span>
+            </div>
+            <div class="bit_name">15</div>
+          </div>
+        </div>
+      </div>
+
+    <div id="numbers">
+      <button class="number" id="seven">7</button>
+      <button class="number" id="eight">8</button>
+      <button class="number" id="nine">9</button>
+      <button class="number" id="four">4</button>
+      <button class="number" id="five">5</button>
+      <button class="number" id="six">6</button>
+      <button class="number" id="one">1</button>
+      <button class="number" id="two">2</button>
+      <button class="number" id="three">3</button>
+      <button class="number" id="zero">0</button>
+      <button class="number" id="equal"> = </button>
+    </div>
+
+
+    <div id="operators">
+      <button class="operator" id="back"> Back </button>
+      <button class="operator" id="CE"> CE </button>
+      <button class="operator" id="C"> C </button>
+      <button class="operator" id="not"> ~ </button>
+      <button class="operator" id="bracketo"> ( </button>
+      <button class="operator" id="bracketc"> ) </button>
+      <button class="operator" id="and"> & </button>
+      <button class="operator" id="or"> | </button>
+      <button class="operator" id="xor"> ^ </button>
+      <button class="operator" id="zero_shiftl"> << </button>
+      <button class="operator" id="signed_shiftr"> >> </button>
+      <button class="operator" id="zero_shiftr"> >>> </button>
+    </div>
+
+      <!--<input id="input" type="text" value="" size="20" maxlength="19" onkeypress="return numberPressed(event)">-->
+    </div>
+  </body>
+</html>
