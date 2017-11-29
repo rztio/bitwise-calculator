@@ -40,12 +40,13 @@ C.addEventListener("click", function() {
   deleteBits();
 });
 
-require(["/scripts/calculator"], function(parser){
+require(["scripts/calculator"], function(parser){
     //calculator now loaded
 })
 
 function backspace() {
   number = number.slice(0, -1);
+  showNumber(number);
 }
 
 function clearLastEntry() {
