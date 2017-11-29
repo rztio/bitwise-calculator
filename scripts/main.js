@@ -40,7 +40,7 @@ C.addEventListener("click", function() {
   deleteBits();
 });
 
-require(["./scripts/calculator"], function(parser){
+require(["/scripts/calculator"], function(parser){
     //calculator now loaded
 })
 
