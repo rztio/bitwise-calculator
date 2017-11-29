@@ -1,0 +1,151 @@
+* {
+    font-family:Verdana, Geneva, sans-serif;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #626970;
+}
+
+#container {
+  margin: auto;
+  width: 780px;
+}
+
+#screen, #bits {
+  width: auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+}
+
+#screen{
+  background-color: white;
+  border: solid;
+  border-color: #626970;
+  margin-bottom: 10px;
+}
+
+
+#equation, #display {
+ height: 40px;
+ padding: 10px;
+ padding-bottom: 5px;
+ text-align: right;
+}
+
+#equation {
+  color: #626970;
+}
+
+#display {
+  font-size:30px;
+}
+
+#bits {
+  background-color: #4CAF50;
+  height: 110px;
+  padding: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+  font-size: 14pt;
+  font-style: normal;
+}
+
+#bits_top, #bits_bottom{
+  height:35%;
+  line-height: 0.1em;
+}
+
+#bits_topleft, #bits_bottomleft, #bits_topright, #bits_bottomright{
+  width: 49%;
+  padding: 5px 0px;
+  margin: 10px 0px;
+}
+
+#bits_topleft, #bits_bottomleft, #numbers{
+  float:left;
+}
+#bits_topright, #bits_bottomright, #operators{
+  float:right;
+}
+
+.bits4{
+  width:25%;
+  float:left;
+}
+
+.bit_name{
+  float:bottom;
+  text-align: left;
+  font-size: 12pt;
+  color: #595959;
+  margin-left: 13px;
+  margin-top: 20px;
+}
+
+#numbers, #operators {
+  width: 50%;
+  height: 330px;
+}
+
+#numbers{
+  margin-left: -5px;
+}
+
+#operators{
+  margin-right: -10px;
+}
+
+.number, .operator {
+  display: block;
+  width: 30%;
+  height: 70px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -khtml-border-radius: 10px;
+  float: left;
+  background-color: #626970;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  font-size: 23pt;
+  padding: 10px;
+  margin: 5px 5px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.number:hover, .operator:hover {
+  background-color: #828a93;
+}
+
+#zero {
+  width: 62%;
+  margin-right: 7px;
+}
+
+#back {
+  background-color: #ff9844;
+}
+
+#back.operator:hover {
+  background-color: #ffb77c;
+}
+
+#C, #CE{
+  background-color: #44a7ff;
+}
+
+#C.operator:hover, #CE.operator:hover {
+  background-color: #72bcff;
+}
