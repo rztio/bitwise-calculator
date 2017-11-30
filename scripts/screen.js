@@ -80,7 +80,7 @@ function setEquation(id){
   } else if (id === "equal"){
     includeNumber();
     try {
-      var result = parser.parse(input);
+      var result = parser.parse(equation);
       showNumber(result);
     } catch (err) {
       showNumber(err.messages);
