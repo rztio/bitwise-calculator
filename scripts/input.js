@@ -107,10 +107,11 @@ window.addEventListener("keypress", function(e){
 
 window.addEventListener("keydown", function(e){
   var charCode = (e.which) ? e.which : e.keyCode;
-  e.preventDefault();
   if (charCode === 13) {
+    e.preventDefault();
     document.getElementById("equal").click();
   } else if (charCode === 8) {
+    e.preventDefault();
     document.getElementById("back").click();
   }
 });
