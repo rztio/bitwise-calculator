@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style/style.css" />
     <script src="libraries/require.js"></script>
     <script src="libraries/BigInteger.min.js"></script>
-    <script src="scripts/main.js" type="text/javascript" defer></script>
-    <script src="scripts/keypress.js" type="text/javascript"></script>
+    <script src="scripts/screen.js" type="text/javascript" defer></script>
+    <script src="scripts/input.js" type="text/javascript" defer></script>
   </head>
   <body>
     <h1>Bitwise Calculator</h1>
@@ -133,36 +133,34 @@
       </div>
 
     <div id="numbers">
-      <button class="number" id="seven">7</button>
-      <button class="number" id="eight">8</button>
-      <button class="number" id="nine">9</button>
-      <button class="number" id="four">4</button>
-      <button class="number" id="five">5</button>
-      <button class="number" id="six">6</button>
-      <button class="number" id="one">1</button>
-      <button class="number" id="two">2</button>
-      <button class="number" id="three">3</button>
-      <button class="number" id="zero">0</button>
-      <button class="number" id="equal"> = </button>
+      <button type="button" class="number" id="seven">7</button>
+      <button type="button" class="number" id="eight">8</button>
+      <button type="button" class="number" id="nine">9</button>
+      <button type="button" class="number" id="four">4</button>
+      <button type="button" class="number" id="five">5</button>
+      <button type="button" class="number" id="six">6</button>
+      <button type="button" class="number" id="one">1</button>
+      <button type="button" class="number" id="two">2</button>
+      <button type="button" class="number" id="three">3</button>
+      <button type="button" class="number" id="zero">0</button>
+      <button type="button" class="number" id="equal"> = </button>
     </div>
 
 
     <div id="operators">
-      <button class="operator" id="back"> Back </button>
-      <button class="operator" id="CE"> CE </button>
-      <button class="operator" id="C"> C </button>
-      <button class="operator" id="not"> ~ </button>
-      <button class="operator" id="bracketo"> ( </button>
-      <button class="operator" id="bracketc"> ) </button>
-      <button class="operator" id="and"> & </button>
-      <button class="operator" id="or"> | </button>
-      <button class="operator" id="xor"> ^ </button>
-      <button class="operator" id="zero_shiftl"> << </button>
-      <button class="operator" id="signed_shiftr"> >> </button>
-      <button class="operator" id="zero_shiftr"> >>> </button>
+      <button type="button" class="operator" id="back"> Back </button>
+      <button type="button" class="operator" id="CE"> CE </button>
+      <button type="button" class="operator" id="C"> C </button>
+      <button type="button" class="operator" id="not"> ~ </button>
+      <button type="button" class="operator" id="bracketo"> ( </button>
+      <button type="button" class="operator" id="bracketc"> ) </button>
+      <button type="button" class="operator" id="and"> & </button>
+      <button type="button" class="operator" id="or"> | </button>
+      <button type="button" class="operator" id="xor"> ^ </button>
+      <button type="button" class="operator" id="zero_shiftl"> << </button>
+      <button type="button" class="operator" id="signed_shiftr"> >> </button>
+      <button type="button" class="operator" id="zero_shiftr"> >>> </button>
     </div>
-
-      <!--<input id="input" type="text" value="" size="20" maxlength="19" onkeypress="return numberPressed(event)">-->
     </div>
   </body>
 </html>
