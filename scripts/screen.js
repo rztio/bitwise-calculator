@@ -11,7 +11,7 @@ require(["scripts/calculator"], function(parser){
 })
 
 function backspace() {
-  number = number.slice(0, -1);
+  number = number.toString().slice(0, -1);
   showNumber(number);
 }
 
