@@ -16,8 +16,9 @@ h1 {
 }
 
 #container {
-  margin: auto;
+  margin: 0 auto;
   width: 780px;
+  min-width: 250px;
 }
 
 #screen, #bits {
@@ -34,11 +35,9 @@ h1 {
   margin-bottom: 10px;
 }
 
-
 #equation, #display {
  height: 40px;
- padding: 10px;
- padding-bottom: 5px;
+ padding: 3px;
  text-align: right;
 }
 
@@ -48,6 +47,7 @@ h1 {
 
 #display {
   font-size:30px;
+   padding-bottom: 5px;
 }
 
 #bits {
@@ -94,21 +94,16 @@ h1 {
 }
 
 #numbers, #operators {
-  width: 50%;
-  height: 330px;
+  width: 49%;
 }
 
-#numbers{
-  margin-left: -5px;
-}
-
-#operators{
-  margin-right: -10px;
+#operators {
+ margin-right: -1.5vw;
 }
 
 .number, .operator {
   display: block;
-  width: 30%;
+  width: 31%;
   height: 70px;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -119,20 +114,18 @@ h1 {
   color: white;
   text-align: center;
   font-size: 23pt;
-  padding: 10px;
-  margin: 5px 5px;
+  margin: 1px 1px;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   outline:none;
 }
 
-.number:hover, .operator:hover {
+.number:hover, .operator:hover, .bit_select:hover {
   background-color: #828a93;
 }
 
 #zero {
-  width: 62%;
-  margin-right: 7px;
+  width: 62.5%;
 }
 
 #back {

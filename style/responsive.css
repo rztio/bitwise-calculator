@@ -1,0 +1,87 @@
+@viewport {
+  width: device-width;
+  zoom: 1.0;
+}
+
+@media screen and (max-width: 780px) {
+  #container {
+    width: 100%;
+  }
+
+  #bits {
+    font-size: 2.7vw;
+  }
+
+  #back {
+    font-size: 4vw;
+  }
+
+  #equation {
+    height: 60px;
+  }
+
+  #display {
+    height: 28px;
+  }
+
+  .number, .operator {
+    height: 70px;
+    font-size: 4.9vw;
+  }
+
+  #zero_shiftr {
+    font-size: 4.4vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    margin: 5px 0px;
+    font-size: 20px;
+  }
+
+  #equation {
+    height: 110px;
+    font-size:3.5vw;
+  }
+
+  #display {
+    font-size:5vw;
+  }
+
+  #bits_topleft, #bits_bottomleft, #bits_topright, #bits_bottomright{
+    width: 100%;
+    padding: 2px 0px;
+    margin: 10px 0px;
+  }
+
+  #bits {
+    height:180px;
+    margin-bottom: 5px;
+    font-size: 4.9vw;
+
+  }
+
+  .bit_name{
+    font-size: 4.5vw;
+    margin-left: 10px;
+  }
+
+  .number, .operator {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #equation {
+    height: 85px;
+    padding: 3px;
+  }
+
+  #display {
+    height: 28px;
+    padding: 3px;
+    text-align: right;
+    font-size:6vw;
+  }
+}

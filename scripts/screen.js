@@ -4,6 +4,7 @@ const EQUATION_LIMIT = 110;
 var equation = "";
 var number = "";
 var storeBits = "";
+var prev_equal = 0;
 
 require(["scripts/calculator"], function(parser){
     //calculator.js now loaded
@@ -76,15 +77,21 @@ function setEquation(id){
     if (equation.length < EQUATION_LIMIT) {
       includeNumber();
       equation += convertOperator(id);
+      prev_equal = 0;
     }
   } else if (id === "equal"){
-    includeNumber();
-    try {
-      var result = parser.parse(equation);
-      showNumber(result);
-    } catch (err) {
-      showNumber(err.messages);
+    if (prev_equal === 0){
+      includeNumber();
+      try {
+        var result = parser.parse(equation);
+        showNumber(result);
+      } catch (err) {
+        showNumber(err.messages);
+      }
+    } else {
+       deleteEquation();
     }
+    prev_equal = 1;
   }
   showEquation(equation);
 }
