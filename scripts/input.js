@@ -75,7 +75,7 @@ window.addEventListener("keypress", function(e){
     case ">":
       document.getElementById("signed_shiftr").click();
       break;
-    case ".":
+    case ";":
       document.getElementById("zero_shiftr").click();
       break;
     case "&":
